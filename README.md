@@ -2,7 +2,6 @@ Multi-Container Runtime
 1. Team Information
 Name	SRN
 Sukhmeet Kaur 	PES1UG24CS479
-
 Sneha Anil 	PES1UG24CS460
 ---
 2. Build, Load, and Run Instructions
