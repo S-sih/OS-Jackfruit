@@ -108,6 +108,7 @@ Screenshot 8 — Clean teardown
 <img width="604" height="94" alt="image" src="https://github.com/user-attachments/assets/275fc8bd-b1ec-4995-a4bd-0fd1738b6eb9" />
 No zombie processes after shutdown, kernel module unloaded cleanly
 ---
+   
 4. Engineering Analysis
 
 1. Isolation Mechanisms
