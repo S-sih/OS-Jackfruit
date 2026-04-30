@@ -4,8 +4,8 @@
 
 | Name | SRN |
 |------|-----|
-| Sriram K | PES1UG24CS468 |
-| Soumik Sinha | PES1UG24CS463 |
+| Sneha Anil | PES1UG24CS460 |
+| Sukhmeet Kaur | PES1UG24CS479 |
 
 ---
 ## 2. Build, Load, and Run Instructions
