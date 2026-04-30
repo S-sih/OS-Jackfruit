@@ -109,7 +109,10 @@ Screenshot 8 — Clean teardown
 No zombie processes after shutdown, kernel module unloaded cleanly
 ---
    
+
+
 4. Engineering Analysis
+
 
 1. Isolation Mechanisms
    The runtime achieves isolation using three Linux namespaces created via the clone() system call with CLONE_NEWPID, CLONE_NEWUTS, and CLONE_NEWNS flags.
