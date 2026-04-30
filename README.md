@@ -85,34 +85,39 @@ Screenshot 1 — Multi-container supervision
 <img width="868" height="92" alt="WhatsApp Image 2026-04-24 at 11 56 16" src="https://github.com/user-attachments/assets/bbc89749-ff6c-4b86-ad74-45ba7a0ede26" />
 <img width="1495" height="96" alt="image" src="https://github.com/user-attachments/assets/e911649f-6184-43e1-bc3c-d3c5ddb974f3" />
 Two containers alpha and beta running concurrently under one supervisor process
+
 Screenshot 2 — Metadata tracking
 <img width="1524" height="166" alt="image" src="https://github.com/user-attachments/assets/494b73c3-1c62-4aa6-b5e3-708a15c3dc08" />
 Output of engine ps showing container IDs, host PIDs, and current states
+
 Screenshot 3 — Bounded-buffer logging
 <img width="741" height="300" alt="image" src="https://github.com/user-attachments/assets/98ec17b9-63fc-48ed-81a9-93796e6c61ff" />
 Log file contents captured through the bounded-buffer logging pipeline
+
 Screenshot 4 — CLI and IPC
 <img width="734" height="94" alt="image" src="https://github.com/user-attachments/assets/5c58efcd-bf29-45f4-8074-597b7cc84d1e" />
 <img width="797" height="58" alt="image" src="https://github.com/user-attachments/assets/37db9542-0eac-428d-abb8-fe81cb98fb01" />
 CLI stop command issued and supervisor responding, demonstrating UNIX domain socket IPC
+
 Screenshot 5 — Soft-limit warning
 <img width="915" height="146" alt="image" src="https://github.com/user-attachments/assets/a4feae54-6486-4cfa-90cc-f906b18eb348" />
 dmesg showing SOFT LIMIT warning when container RSS exceeds soft threshold
+
 Screenshot 6 — Hard-limit enforcement
 <img width="917" height="26" alt="image" src="https://github.com/user-attachments/assets/c26478ea-7b97-4dbe-b48e-427720bc7f84" />
 dmesg showing container killed after exceeding hard limit, supervisor metadata updated to killed state
+
 Screenshot 7 — Scheduling experiment
 <img width="588" height="609" alt="image" src="https://github.com/user-attachments/assets/cda83c38-4cbf-42a3-9ddf-75ae457d5be5" />
 top output showing cpuhi (nice -10) receiving more CPU time than cpulo (nice +10)
+
 Screenshot 8 — Clean teardown
 <img width="604" height="94" alt="image" src="https://github.com/user-attachments/assets/275fc8bd-b1ec-4995-a4bd-0fd1738b6eb9" />
 No zombie processes after shutdown, kernel module unloaded cleanly
+
 ---
    
-
-
 4. Engineering Analysis
-
 
 1. Isolation Mechanisms
    The runtime achieves isolation using three Linux namespaces created via the clone() system call with CLONE_NEWPID, CLONE_NEWUTS, and CLONE_NEWNS flags.
